@@ -1,0 +1,163 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3); /* Gradient background */
+    color: #333;
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.9); /* Slightly transparent blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+nav {
+    background-color: rgba(52, 58, 64, 0.845); /* Slightly transparent dark nav */
+    padding: 10px;
+    position: sticky; /* Sticky nav */
+    top: 0;
+    z-index: 100; /* Ensure it stays on top */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px; /* More rounded */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform */
+}
+
+nav a:hover {
+    background-color: rgba(18, 0, 179, 0.9);
+    transform: scale(1.1); /* Scale on hover */
+}
+
+main {
+    padding: 30px;
+    margin: 20px auto; /* Center the main content */
+    max-width: 1200px; /* Set a max width */
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    transition: transform 0.3s ease;
+}
+section:hover{
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.member-list, .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.member-list > div, .project-list > div {
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.member-list > div:hover, .project-list > div:hover{
+    transform: scale(1.05);
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin-bottom: 10px;
+}
+
+.resource-list a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resource-list a i {
+    margin-right: 10px;
+}
+
+.resource-list a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.contact{
+  background-color: #f4f1f1;
+}
+.contact-details i{
+  font-size: 1.5rem;
+  color: #faf8f6;
+}
+.contact-details p{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+  box-shadow: none;
+  border: 1px solid #efedea;
+}
+.contact-form .form-control{
+  padding: 10px 10px;
+  width: 80%;
+}
