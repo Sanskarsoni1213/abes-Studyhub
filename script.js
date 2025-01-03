@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const members = [
-        { name: 'Sanskar soni', role: 'Web Developer' },
+        { name: 'Sanskar soni 🔗', role: 'Web Developer' },
         { name: 'Shivang sikhar singh', role: 'UI/UX Designer' },
-        { name: 'Sumit kumar gupta', role:'Backhend developer'},
+        { name: 'Sumit kumar gupta', role:'Backend developer'},
         { name:'Sarthak tiwari', role:'Frontend developer'},
         { name:'Shashank singh', role:'Creative ideas'},
         { name:'Shresth sahu', role:'Management',},
